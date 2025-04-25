@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Czat P2P</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>💬 Czat P2P</h2>
+    <div>Jesteś zalogowany jako: <span id="me"></span></div>
+    <div>Połączony z: <span id="other"></span></div>
+    <textarea id="chat" readonly rows="10"></textarea><br>
+    <input id="msg" placeholder="Twoja wiadomość...">
+    <button onclick="send()">Wyślij</button>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
